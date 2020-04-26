@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошелек JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>Кошелек</h1>
+        <h2>Калькулятор расходов</h2>
+    </head>
+
+    <main>
+        <div class="container">
+            <section class="total">
+                <header class="total__header">
+                    <h3>Баланс</h3>
+                <p class="total__balance">0 ₽</p>
+                </header>
+                <div class="total__main">
+                    <div class="total__main-item total__income">
+                        <h4>Доходы</h4>
+                        <p class="total__money total__money-income">
+                            +0 ₽
+                        </p>
+                    </div>
+                    <div class="total__main-item total__expenses">
+                        <h4>Расходы</h4>
+                        <p class="total__money total__money-expenses">
+                            -0 ₽
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="history">
+                <h3>История расходов</h3>
+                <ul class="history__list">
+                </ul>
+            </section>
+
+            <section class="operation">
+                <h3>Новая операция</h3>
+                <form id="form">
+                    <label>
+                        <input type="text" class="operation__fields operation__name" placeholder="Наименование операции">
+                    </label>
+                    <label>
+                        <input type="number" class="operation__fields operation__amount" placeholder="Введите сумму">
+                    </label>
+                    <button type="submit" class="operation__add">Добавить операцию</button>
+
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
